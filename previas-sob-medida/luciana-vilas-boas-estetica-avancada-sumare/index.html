@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Luciana Vilas Boas · Estética Avançada em Sumaré/SP</title>
+<meta name="description" content="Tratamentos faciais e corporais personalizados com a Luciana Vilas Boas, em Sumaré/SP. Skinbooster, microagulhamento, limpeza de pele, drenagem, lipocavitação e mais. Agende sua avaliação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Josefin+Sans:wght@300;400&family=Montserrat:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --marfim:#FAF6EF;--creme:#F3ECE1;--areia:#E7DAC6;--linho:#D9C7AC;
+    --taupe:#8A7560;--cafe:#4A3728;--escuro:#2B1F17;
+    --ouro:#B08D57;--ouro-claro:#D8BF8E;--verde:#33502F;
+    --wa:#25D366;
+    --serif:'Cormorant Garamond',Georgia,serif;--caps:'Josefin Sans',sans-serif;--corpo:'Montserrat',system-ui,sans-serif;--script:'Allura',cursive;
+    --ease:cubic-bezier(.22,1,.36,1);
+    --sombra:0 40px 80px -48px rgba(43,31,23,.45);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--corpo);font-weight:300;color:var(--cafe);background:var(--marfim);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--escuro);line-height:1.08;letter-spacing:.005em}
+  h2{font-size:clamp(2.3rem,4.6vw,3.6rem)}
+  h2 em,h1 em{font-style:normal;font-family:var(--script);color:var(--ouro);font-size:1.25em;line-height:.8;font-weight:400}
+  .olho{font-family:var(--caps);font-weight:300;font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--taupe);display:inline-flex;align-items:center;gap:.9rem}
+  .olho::before{content:"";width:34px;height:1px;background:var(--ouro)}
+  .pad{padding:clamp(5rem,10vw,8.5rem) 0}
+  .centro{text-align:center}.centro .olho::after{content:"";width:34px;height:1px;background:var(--ouro)}
+  .intro{max-width:620px;color:var(--taupe);font-size:1.02rem;margin-top:1.3rem}
+  .centro .intro{margin-inline:auto}
+
+  .btn{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--corpo);font-weight:500;font-size:.92rem;letter-spacing:.04em;padding:1.05rem 2rem;border-radius:999px;transition:.5s var(--ease);border:1px solid transparent;white-space:nowrap}
+  .btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+  .btn-ouro{background:var(--escuro);color:var(--marfim)}
+  .btn-ouro:hover{background:var(--ouro);transform:translateY(-3px);box-shadow:0 22px 40px -22px rgba(176,141,87,.9)}
+  .btn-linha{border-color:var(--linho);color:var(--cafe)}
+  .btn-linha:hover{border-color:var(--ouro);background:var(--creme);transform:translateY(-3px)}
+
+  /* faixa da prévia */
+  .faixa{background:var(--escuro);color:var(--areia);font-size:.74rem;letter-spacing:.06em;text-align:center;padding:.55rem 16px}
+  .faixa b{color:var(--ouro-claro);font-weight:500}
+
+  /* cabeçalho */
+  header{position:sticky;top:0;z-index:20;background:rgba(250,246,239,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(217,199,172,.45)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:78px}
+  .marca{display:flex;align-items:center;gap:.85rem}
+  .mono{width:46px;height:46px;border-radius:50%;border:1px solid var(--ouro);display:grid;place-items:center;font-family:var(--script);font-size:1.75rem;color:var(--ouro);line-height:1;padding-top:.2rem;flex:none;position:relative}
+  .mono::after{content:"";position:absolute;inset:3px;border-radius:50%;border:1px solid rgba(176,141,87,.35)}
+  .marca-txt b{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--escuro);line-height:1.05;letter-spacing:.01em}
+  .marca-txt small{display:block;font-family:var(--caps);font-size:.6rem;letter-spacing:.42em;color:var(--taupe);margin-top:.15rem}
+  nav{display:flex;gap:2.1rem;font-size:.83rem;letter-spacing:.05em}
+  nav a{position:relative;color:var(--cafe)}
+  nav a::after{content:"";position:absolute;left:0;bottom:-5px;height:1px;width:0;background:var(--ouro);transition:.4s var(--ease)}
+  nav a:hover::after{width:100%}
+  header .btn{padding:.75rem 1.4rem;font-size:.82rem}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:clamp(3rem,7vw,6rem) 0 clamp(4rem,8vw,7rem)}
+  .hero::before{content:"";position:absolute;right:-12vw;top:-10vw;width:62vw;height:62vw;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--creme),transparent 68%);z-index:0}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
+  .hero h1{font-size:clamp(2.7rem,5.2vw,4.5rem);margin:1.4rem 0 1.6rem}
+  .hero h1 em{display:block;margin-top:.15em}
+  .hero p.sub{font-size:1.08rem;color:var(--taupe);max-width:500px}
+  .acoes{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.3rem}
+  .prova{display:flex;align-items:center;gap:1.1rem;margin-top:2.6rem;padding-top:1.8rem;border-top:1px solid var(--areia);max-width:500px}
+  .prova .nota{font-family:var(--serif);font-size:2.6rem;color:var(--escuro);line-height:1}
+  .estrelas{color:var(--ouro);letter-spacing:.18em;font-size:.95rem}
+  .prova small{display:block;font-size:.8rem;color:var(--taupe)}
+  .hero-foto{position:relative;justify-self:end;width:min(100%,500px)}
+  .arco{border-radius:260px 260px 18px 18px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--sombra);background:var(--areia)}
+  .arco img{width:100%;height:100%;object-fit:cover;object-position:52% 30%;transform:scale(1.04);transition:transform 1.6s var(--ease)}
+  .hero-foto:hover .arco img{transform:scale(1.08)}
+  .moldura{position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--linho);border-radius:270px 270px 22px 22px;z-index:-1}
+  .selo{position:absolute;left:-2.4rem;bottom:2.4rem;background:var(--marfim);border:1px solid var(--areia);border-radius:16px;padding:1rem 1.25rem;box-shadow:0 26px 50px -30px rgba(43,31,23,.45);max-width:230px}
+  .selo b{display:block;font-family:var(--serif);font-size:1.25rem;color:var(--escuro);font-weight:500;line-height:1.2}
+  .selo span{font-size:.78rem;color:var(--taupe)}
+
+  /* fita de tratamentos */
+  .fita{background:var(--escuro);color:var(--areia);overflow:hidden;padding:1.15rem 0}
+  .fita-trilho{display:flex;gap:2.6rem;width:max-content;animation:correr 38s linear infinite;font-family:var(--serif);font-size:1.35rem;font-style:italic}
+  .fita-trilho span{display:inline-flex;align-items:center;gap:2.6rem;white-space:nowrap}
+  .fita-trilho span::after{content:"✦";font-style:normal;color:var(--ouro);font-size:.8rem}
+  @keyframes correr{to{transform:translateX(-50%)}}
+
+  /* sobre */
+  .sobre .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+  .sobre-fotos{position:relative;padding-bottom:3rem}
+  .sobre-fotos .f1{border-radius:18px;overflow:hidden;aspect-ratio:3/5;max-height:640px;width:78%;box-shadow:var(--sombra)}
+  .sobre-fotos .f1 img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+  .sobre-fotos .f2{position:absolute;right:0;bottom:0;width:50%;border-radius:14px;overflow:hidden;aspect-ratio:1/1;border:6px solid var(--marfim);box-shadow:var(--sombra)}
+  .sobre-fotos .f2 img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+  .sobre h2{margin:1.2rem 0 1.5rem}
+  .sobre p{color:var(--taupe);margin-bottom:1.1rem;max-width:560px}
+  .assinatura{font-family:var(--script);font-size:2.6rem;color:var(--ouro);line-height:1;margin-top:1.4rem}
+  .pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.2rem;max-width:560px}
+  .pilares div{border-top:1px solid var(--linho);padding-top:1rem}
+  .pilares b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--escuro);font-weight:500}
+  .pilares span{font-size:.82rem;color:var(--taupe);line-height:1.5}
+
+  /* destaques */
+  .destaques{background:var(--creme)}
+  .dest-grade{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:3.5rem}
+  .dest{position:relative;display:grid;grid-template-columns:1fr;background:var(--marfim);border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -48px rgba(43,31,23,.5);transition:.6s var(--ease)}
+  .dest:hover{transform:translateY(-6px)}
+  .dest-foto{background:var(--areia);aspect-ratio:1/1;overflow:hidden}
+  .dest-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .dest-txt{padding:2.2rem 2.2rem 2.4rem;display:flex;flex-direction:column;flex:1}
+  .dest-txt .tag{font-family:var(--caps);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ouro)}
+  .dest-txt h3{font-size:2.1rem;margin:.8rem 0 1rem}
+  .dest-txt p{font-size:.92rem;color:var(--taupe)}
+  .dest-txt ul{list-style:none;margin-top:1.3rem;display:grid;gap:.45rem}
+  .dest-txt li{font-size:.9rem;display:flex;gap:.6rem;align-items:baseline}
+  .dest-txt li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ouro);flex:none;transform:translateY(-2px)}
+  .dest-txt .btn{margin-top:1.8rem;align-self:flex-start;padding:.8rem 1.4rem;font-size:.82rem}
+  .dest.verde .dest-txt h3{color:var(--verde)}
+  .dest.verde .dest-txt li::before{background:var(--verde)}
+
+  /* tratamentos */
+  .abas{display:flex;justify-content:center;gap:.6rem;margin-top:2.6rem}
+  .aba{font-family:var(--caps);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;padding:.85rem 1.7rem;border-radius:999px;border:1px solid var(--linho);background:transparent;color:var(--cafe);cursor:pointer;transition:.4s var(--ease)}
+  .aba.on{background:var(--escuro);border-color:var(--escuro);color:var(--marfim)}
+  .lista{display:none;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--areia);border:1px solid var(--areia);border-radius:20px;overflow:hidden;margin-top:2.6rem}
+  .lista.on{display:grid}
+  .trat{background:var(--marfim);padding:2rem 1.8rem;transition:.45s var(--ease);position:relative}
+  .trat:hover{background:var(--creme)}
+  .trat .n{font-family:var(--serif);font-style:italic;color:var(--ouro);font-size:1rem}
+  .trat h3{font-size:1.5rem;margin:.4rem 0 .55rem}
+  .trat p{font-size:.88rem;color:var(--taupe);line-height:1.65}
+
+  /* processo */
+  .processo{background:var(--escuro);color:var(--areia);position:relative;overflow:hidden}
+  .processo::after{content:"";position:absolute;left:-10vw;bottom:-30vw;width:50vw;height:50vw;border-radius:50%;border:1px solid rgba(216,191,142,.14)}
+  .processo h2{color:var(--marfim)}
+  .processo .olho{color:var(--ouro-claro)}
+  .processo .intro{color:#bfae98}
+  .passos{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;margin-top:4rem;position:relative;z-index:1}
+  .passo{border-top:1px solid rgba(216,191,142,.35);padding-top:1.8rem}
+  .passo .num{font-family:var(--serif);font-size:3.4rem;color:var(--ouro);line-height:1;font-style:italic}
+  .passo h3{color:var(--marfim);font-size:1.7rem;margin:1rem 0 .7rem}
+  .passo p{color:#bfae98;font-size:.92rem}
+
+  /* galeria */
+  .galeria{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:520px;gap:1.1rem;margin-top:3.5rem}
+  .galeria figure{border-radius:18px;overflow:hidden;position:relative;background:var(--areia)}
+    .galeria img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+  .galeria figure:hover img{transform:scale(1.05)}
+  .galeria figcaption{position:absolute;left:1rem;bottom:1rem;background:rgba(250,246,239,.92);font-size:.76rem;letter-spacing:.06em;padding:.45rem .9rem;border-radius:999px;color:var(--cafe)}
+
+  /* avaliações */
+  .avaliacoes{background:var(--creme)}
+  .aval-topo{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+  .google{display:flex;align-items:center;gap:1.2rem;background:var(--marfim);border:1px solid var(--areia);border-radius:18px;padding:1.2rem 1.6rem}
+  .google .nota{font-family:var(--serif);font-size:3rem;line-height:1;color:var(--escuro)}
+  .google small{display:block;font-size:.8rem;color:var(--taupe)}
+  .depos{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:3rem}
+  .depo{background:var(--marfim);border-radius:18px;padding:2rem 1.8rem;display:flex;flex-direction:column;gap:1.1rem;border:1px solid rgba(217,199,172,.5)}
+  .depo .aspas{font-family:var(--serif);font-size:4rem;line-height:.5;color:var(--ouro-claro);height:1.4rem}
+  .depo p{font-family:var(--serif);font-size:1.28rem;line-height:1.45;color:var(--escuro);font-style:italic}
+  .depo footer{margin-top:auto;display:flex;align-items:center;gap:.8rem;font-size:.85rem}
+  .depo .av{width:38px;height:38px;border-radius:50%;background:var(--areia);display:grid;place-items:center;font-family:var(--serif);font-size:1.1rem;color:var(--cafe)}
+  .depo footer small{display:block;color:var(--taupe);font-size:.75rem}
+
+  /* cursos */
+  .cursos .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+  .hero .wrap>*,.sobre .wrap>*,.cursos .wrap>*,.contato .wrap>*{min-width:0}
+  .cursos-foto{border-radius:20px;overflow:hidden;aspect-ratio:5/4;box-shadow:var(--sombra)}
+  .cursos-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+  .cursos h2{margin:1.2rem 0 1.2rem}
+  .cursos p{color:var(--taupe)}
+  .curso-lista{display:grid;gap:.9rem;margin:2rem 0 2.2rem}
+  .curso{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;border:1px solid var(--areia);border-radius:14px;padding:1.1rem 1.4rem;background:var(--marfim)}
+  .curso b{font-family:var(--serif);font-size:1.4rem;color:var(--escuro);font-weight:500}
+  .curso span{font-family:var(--caps);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro)}
+
+  /* dúvidas */
+  .faq{max-width:780px;margin:3rem auto 0}
+  .faq details{border-bottom:1px solid var(--areia)}
+  .faq summary{list-style:none;cursor:pointer;padding:1.5rem 0;display:flex;justify-content:space-between;gap:1rem;font-family:var(--serif);font-size:1.45rem;color:var(--escuro)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--ouro);font-size:1.6rem;line-height:1;transition:.3s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{padding:0 0 1.5rem;color:var(--taupe);max-width:680px}
+
+  /* contato */
+  .contato{background:var(--escuro);color:var(--areia)}
+  .contato .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+  .contato h2{color:var(--marfim);margin:1.2rem 0 1.4rem}
+  .contato .olho{color:var(--ouro-claro)}
+  .contato p{color:#bfae98}
+  .dados{display:grid;gap:1.3rem;margin:2.2rem 0 2.4rem}
+  .dados div{display:flex;gap:1rem}
+  .dados svg{width:20px;height:20px;fill:var(--ouro);flex:none;margin-top:.25rem}
+  .dados b{display:block;font-family:var(--caps);font-weight:400;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro-claro)}
+  .dados span,.dados a{color:var(--marfim);font-size:.98rem}
+  .mapa{border-radius:20px;overflow:hidden;aspect-ratio:1/1;border:1px solid rgba(216,191,142,.25);background:#3a2c22}
+  .mapa iframe{width:100%;height:100%;border:0;filter:grayscale(.35) sepia(.2)}
+  .contato .btn-ouro{background:var(--ouro);color:var(--escuro)}
+  .contato .btn-ouro:hover{background:var(--ouro-claro)}
+
+  footer.rodape{background:#22180f;color:#9c8b76;font-size:.8rem;padding:2.2rem 0;text-align:center;line-height:1.9}
+  footer.rodape b{color:var(--areia);font-weight:500}
+
+  .flutuante{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 18px 36px -14px rgba(37,211,102,.75);transition:.4s var(--ease)}
+  .flutuante:hover{transform:scale(1.08)}
+  .flutuante svg{width:30px;height:30px;fill:#fff}
+
+  /* revelação no scroll */
+  .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+  .rv.vis{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.fita-trilho{animation:none}}
+
+  @media (max-width:980px){
+    nav{display:none}
+    .hero .wrap,.sobre .wrap,.cursos .wrap,.contato .wrap{grid-template-columns:1fr}
+    .hero-foto{justify-self:center;width:min(100%,430px);margin-top:1rem}
+    .selo{left:-.6rem}
+    .dest-grade{grid-template-columns:1fr}
+    .lista{grid-template-columns:1fr 1fr}
+    .passos{grid-template-columns:1fr;gap:2rem}
+    .depos{grid-template-columns:1fr}
+    .sobre-fotos{max-width:420px;margin-inline:auto;width:100%}
+  }
+  @media (max-width:600px){
+    header .wrap{height:66px}
+    header .btn span{display:none}
+    header .btn{padding:.7rem}
+    .marca-txt b{font-size:1.1rem}
+    .mono{width:40px;height:40px;font-size:1.5rem}
+    .hero h1{font-size:2.85rem}
+    .lista{grid-template-columns:1fr}
+    .galeria{grid-template-columns:1fr;grid-template-rows:380px 240px}
+    .galeria figure:first-child{grid-row:auto}
+    .pilares{grid-template-columns:1fr}
+    .acoes .btn{width:100%;justify-content:center}
+    .btn{white-space:normal;text-align:center}
+    .sobre-fotos .f2{right:0}
+    .selo{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="faixa">Prévia de site criada pela <b>Atlas Digital</b> para Luciana Vilas Boas Estética Avançada</div>
+
+<header>
+  <div class="wrap">
+    <a href="#topo" class="marca" aria-label="Luciana Vilas Boas, início">
+      <span class="mono">Lu</span>
+      <span class="marca-txt"><b>Luciana Vilas Boas</b><small>CLINIC</small></span>
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-ouro" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span>Agendar avaliação</span></a>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="hero-txt rv">
+      <span class="olho">Estética avançada · Sumaré/SP</span>
+      <h1>Mais saúde pra sua pele, <em>de dentro pra fora.</em></h1>
+      <p class="sub">Tratamentos faciais e corporais personalizados, com a Luciana do início ao fim: da avaliação ao acompanhamento depois do procedimento.</p>
+      <div class="acoes">
+        <a class="btn btn-ouro" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Agendar minha avaliação</a>
+        <a class="btn btn-linha" href="#tratamentos">Ver tratamentos</a>
+      </div>
+      <div class="prova">
+        <span class="nota">5,0</span>
+        <div><span class="estrelas">★★★★★</span><small>Nota máxima nas avaliações do Google</small></div>
+      </div>
+    </div>
+    <div class="hero-foto rv" style="--d:.15s">
+      <div class="moldura"></div>
+      <div class="arco"><img src="fotos/luciana-clinica.jpg" alt="Luciana Vilas Boas na clínica, segurando a caneta de microagulhamento" fetchpriority="high"></div>
+      <div class="selo"><b>Atendimento personalizado</b><span>Cada protocolo começa por uma avaliação da sua pele.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="fita" aria-hidden="true">
+  <div class="fita-trilho">
+    <span>Skinbooster</span><span>Microagulhamento</span><span>Limpeza de pele</span><span>Botox</span><span>Radiofrequência</span><span>Luz pulsada</span><span>Drenagem linfática</span><span>Lipocavitação</span><span>Intradermoterapia</span>
+    <span>Skinbooster</span><span>Microagulhamento</span><span>Limpeza de pele</span><span>Botox</span><span>Radiofrequência</span><span>Luz pulsada</span><span>Drenagem linfática</span><span>Lipocavitação</span><span>Intradermoterapia</span>
+  </div>
+</div>
+
+<section class="sobre pad" id="sobre">
+  <div class="wrap">
+    <div class="sobre-fotos rv">
+      <div class="f1"><img src="fotos/luciana-retrato.jpg" alt="Retrato da Luciana Vilas Boas" loading="lazy"></div>
+      <div class="f2"><img src="fotos/luciana-jaleco.jpg" alt="Luciana Vilas Boas de jaleco" loading="lazy"></div>
+    </div>
+    <div class="rv" style="--d:.1s">
+      <span class="olho">Quem cuida de você</span>
+      <h2>Prazer, eu sou a <em>Luciana.</em></h2>
+      <p>Aqui, quem te recebe, avalia e faz o procedimento sou eu. Antes de qualquer tratamento, a gente conversa sobre a sua pele, o que te incomoda e o resultado que você espera, pra montar um protocolo que faça sentido pra você.</p>
+      <p>E o cuidado não termina quando você sai da maca: você leva as orientações do pós e conta comigo nos dias seguintes. É isso que as clientes mais destacam nas avaliações.</p>
+      <div class="assinatura">Luciana Vilas Boas</div>
+      <div class="pilares">
+        <div><b>Avaliação</b><span>Indicação feita pro seu caso, sem protocolo pronto.</span></div>
+        <div><b>Técnica</b><span>Facial e corporal no mesmo espaço.</span></div>
+        <div><b>Pós</b><span>Orientação e acompanhamento depois.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="destaques pad">
+  <div class="wrap">
+    <div class="centro rv">
+      <span class="olho">Em destaque</span>
+      <h2>Os queridinhos <em>da clínica</em></h2>
+    </div>
+    <div class="dest-grade">
+      <article class="dest rv">
+        <div class="dest-foto"><img src="fotos/arte-skinbooster.jpg" alt="Arte do Skinbooster da Luciana Vilas Boas Clinic" loading="lazy" style="object-position:50% 0"></div>
+        <div class="dest-txt">
+          <span class="tag">Facial</span>
+          <h3>Skinbooster</h3>
+          <p>Hidratação profunda com ácido hialurônico, pra quem quer a pele com mais viço e qualidade. A indicação e o número de sessões saem da avaliação.</p>
+                    <a class="btn btn-linha" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Quero%20saber%20mais%20sobre%20o%20Skinbooster." target="_blank" rel="noopener">Quero saber mais</a>
+        </div>
+      </article>
+      <article class="dest verde rv" style="--d:.12s">
+        <div class="dest-foto"><img src="fotos/arte-ghk-cu.jpg" alt="Arte do microagulhamento com GHK-Cu da Luciana Vilas Boas Clinic" loading="lazy" style="object-position:50% 0"></div>
+        <div class="dest-txt">
+          <span class="tag">Facial</span>
+          <h3>Microagulhamento com GHK-Cu</h3>
+          <p>O microagulhamento abre caminho pro GHK-Cu, um peptídeo que estimula a regeneração e o colágeno. A indicação e o número de sessões saem da avaliação.</p>
+                    <a class="btn btn-linha" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Quero%20saber%20mais%20sobre%20o%20microagulhamento%20com%20GHK-Cu." target="_blank" rel="noopener">Quero saber mais</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="tratamentos">
+  <div class="wrap">
+    <div class="centro rv">
+      <span class="olho">Tratamentos</span>
+      <h2>Cuidado completo, <em>do rosto ao corpo</em></h2>
+      <p class="intro">Todos os tratamentos começam com uma avaliação. Assim a indicação é feita pra sua pele e pro seu objetivo, não pra uma tabela.</p>
+    </div>
+    <div class="abas rv" role="tablist">
+      <button class="aba on" data-lista="facial" role="tab" aria-selected="true">Facial</button>
+      <button class="aba" data-lista="corporal" role="tab" aria-selected="false">Corporal</button>
+    </div>
+    <div class="lista on" id="facial">
+      <div class="trat"><span class="n">01</span><h3>Botox</h3><p>Suaviza linhas de expressão e devolve um aspecto descansado ao rosto.</p></div>
+      <div class="trat"><span class="n">02</span><h3>Limpeza de pele</h3><p>Higienização profunda, extração e hidratação pra uma pele mais leve e saudável.</p></div>
+      <div class="trat"><span class="n">03</span><h3>Microagulhamento</h3><p>Estimula o colágeno e melhora textura, poros, marcas e cicatrizes.</p></div>
+      <div class="trat"><span class="n">04</span><h3>Acne, manchas e rejuvenescimento</h3><p>Protocolos pensados pra cada necessidade da sua pele.</p></div>
+      <div class="trat"><span class="n">05</span><h3>Radiofrequência</h3><p>Tratamento pra flacidez e rugas, que estimula a firmeza da pele.</p></div>
+      <div class="trat"><span class="n">06</span><h3>Luz pulsada</h3><p>Depilação definitiva e tratamentos pra pele.</p></div>
+    </div>
+    <div class="lista" id="corporal">
+      <div class="trat"><span class="n">01</span><h3>Estrias, flacidez e celulite</h3><p>Protocolos corporais combinados de acordo com a avaliação.</p></div>
+      <div class="trat"><span class="n">02</span><h3>Gordura localizada</h3><p>Tratamentos pra modelar as regiões que mais te incomodam.</p></div>
+      <div class="trat"><span class="n">03</span><h3>Lipocavitação</h3><p>A lipo sem corte, com ultrassom, pra gordura localizada.</p></div>
+      <div class="trat"><span class="n">04</span><h3>Intradermoterapia pressurizada</h3><p>Aplicação de enzimas sem agulha. Também há aplicação de enzimas convencional.</p></div>
+      <div class="trat"><span class="n">05</span><h3>Drenagem linfática</h3><p>Ajuda a desinchar, aliviar a retenção e melhorar a circulação.</p></div>
+      <div class="trat"><span class="n">06</span><h3>Massagem relaxante e ventosa</h3><p>Pra relaxar o corpo e aliviar a tensão do dia a dia.</p></div>
+      <div class="trat"><span class="n">07</span><h3>Microagulhamento corporal</h3><p>Também indicado pra estrias e textura da pele do corpo.</p></div>
+      <div class="trat"><span class="n">08</span><h3>Radiofrequência corporal</h3><p>Estimula a firmeza da pele em regiões com flacidez.</p></div>
+      <div class="trat"><span class="n">09</span><h3>Depilação com cera</h3><p>Pra quem prefere o método tradicional.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="processo pad">
+  <div class="wrap">
+    <div class="rv">
+      <span class="olho">Como funciona</span>
+      <h2>Do primeiro contato <em>ao resultado</em></h2>
+      <p class="intro">Sem pacote empurrado e sem pressa. Você entende cada etapa antes de decidir.</p>
+    </div>
+    <div class="passos">
+      <div class="passo rv"><span class="num">01</span><h3>Avaliação</h3><p>Você conta o que te incomoda e a Luciana avalia a sua pele com calma.</p></div>
+      <div class="passo rv" style="--d:.1s"><span class="num">02</span><h3>Protocolo personalizado</h3><p>A indicação de tratamento é montada pro seu caso, com o número de sessões e o que esperar.</p></div>
+      <div class="passo rv" style="--d:.2s"><span class="num">03</span><h3>Acompanhamento</h3><p>Depois do procedimento, você recebe as orientações do pós e segue acompanhada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="rv">
+      <span class="olho">Na clínica</span>
+      <h2>Um espaço pensado <em>pra você</em></h2>
+    </div>
+    <div class="galeria">
+      <figure class="rv"><img src="fotos/luciana-clinica.jpg" alt="Sala de atendimento da clínica" loading="lazy" style="object-position:50% 35%"><figcaption>Sala de atendimento</figcaption></figure>
+      <figure class="rv" style="--d:.1s"><img src="fotos/procedimento-facial.jpg" alt="Procedimento facial" loading="lazy" style="object-position:30% 40%"><figcaption>Procedimento facial</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="avaliacoes pad" id="avaliacoes">
+  <div class="wrap">
+    <div class="aval-topo rv">
+      <div>
+        <span class="olho">Avaliações</span>
+        <h2>Quem já passou <em>por aqui</em></h2>
+      </div>
+      <div class="google"><span class="nota">5,0</span><div><span class="estrelas">★★★★★</span><small>13 avaliações no Google</small></div></div>
+    </div>
+    <div class="depos">
+      <article class="depo rv"><span class="aspas">“</span><p>Fui muito bem atendida na clínica, a Luciana é super simpática e atenciosa. Gostei muito do procedimento, saí da clínica com a pele renovada.</p><footer><span class="av">T</span><div>Tahynara F.<small>Google</small></div></footer></article>
+      <article class="depo rv" style="--d:.1s"><span class="aspas">“</span><p>Espaço excelente, atendimento personalizado e com muita qualidade. Luciana é uma profissional nota 10. Recomendo muito!</p><footer><span class="av">R</span><div>Renato A.<small>Google</small></div></footer></article>
+      <article class="depo rv" style="--d:.2s"><span class="aspas">“</span><p>Muito obrigada, Lu, pelo ótimo trabalho, pelas dicas e pelo atendimento pós procedimento. Com certeza realizarei mais procedimentos com você!</p><footer><span class="av">L</span><div>Letícia G.<small>Google</small></div></footer></article>
+      <article class="depo rv"><span class="aspas">“</span><p>Procedimento perfeito. O resultado superou minhas expectativas. Super recomendo.</p><footer><span class="av">D</span><div>Denise L.<small>Google</small></div></footer></article>
+      <article class="depo rv" style="--d:.1s"><span class="aspas">“</span><p>Profissional amorosa, cuidadosa e competente demais! Espaço acolhedor.</p><footer><span class="av">S</span><div>Sara B.<small>Google</small></div></footer></article>
+      <article class="depo rv" style="--d:.2s"><span class="aspas">“</span><p>Lugar aconchegante, bem localizado e ótimo atendimento!</p><footer><span class="av">J</span><div>Juliana G.<small>Google</small></div></footer></article>
+    </div>
+  </div>
+</section>
+
+<section class="cursos pad" id="cursos">
+  <div class="wrap">
+    <div class="cursos-foto rv"><img src="fotos/limpeza-de-pele.jpg" alt="Aula prática do curso de limpeza de pele" loading="lazy"></div>
+    <div class="rv" style="--d:.1s">
+      <span class="olho">Para profissionais da beleza</span>
+      <h2>Aprenda <em>na prática</em></h2>
+      <p>Além dos atendimentos, a Luciana forma profissionais em cursos 100% práticos, com supervisão em cada etapa.</p>
+      <div class="curso-lista">
+        <div class="curso"><b>Formação em Dermaplaning</b><span>100% prático · com supervisão</span></div>
+        <div class="curso"><b>Curso de Limpeza de Pele</b><span>100% prático</span></div>
+      </div>
+      <a class="btn btn-ouro" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Quero%20saber%20das%20pr%C3%B3ximas%20turmas%20dos%20cursos." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Quero saber das próximas turmas</a>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="centro rv">
+      <span class="olho">Dúvidas</span>
+      <h2>Antes de <em>agendar</em></h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>Preciso fazer avaliação antes do tratamento?</summary><p>Sim. É na avaliação que a Luciana entende a sua pele e o que você procura, e indica o tratamento e o número de sessões pro seu caso.</p></details>
+      <details><summary>Atende tratamentos faciais e corporais?</summary><p>Os dois. No facial, de limpeza de pele a Skinbooster e microagulhamento. No corporal, de drenagem e massagem a lipocavitação, radiofrequência e tratamentos pra estrias, flacidez e celulite.</p></details>
+      <details><summary>Como funciona o pós-procedimento?</summary><p>Você sai com as orientações do que fazer nos dias seguintes e pode chamar a Luciana no WhatsApp se tiver qualquer dúvida.</p></details>
+      <details><summary>Como faço pra agendar?</summary><p>Pelo WhatsApp (19) 99250-9325. Conte rapidamente o que você quer tratar e a gente encontra o melhor horário pra sua avaliação.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contato pad" id="contato">
+  <div class="wrap">
+    <div class="rv">
+      <span class="olho">Contato</span>
+      <h2>Agende sua avaliação e <em>cuide de você.</em></h2>
+      <p>Fale direto com a Luciana pelo WhatsApp e escolha o melhor horário.</p>
+      <div class="dados">
+        <div><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><div><b>Endereço</b><span>R. Euclídes da Cunha, 151, Virgílio Basso<br>Sumaré/SP · 13174-300</span></div></div>
+        <div><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><div><b>WhatsApp</b><a href="https://wa.me/5519992509325" target="_blank" rel="noopener">(19) 99250-9325</a></div></div>
+        <div><svg viewBox="0 0 24 24" style="fill:none;stroke:var(--ouro);stroke-width:1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".6" style="fill:var(--ouro)"/></svg><div><b>Instagram</b><a href="https://www.instagram.com/luvilasboas_esteticista/" target="_blank" rel="noopener">@luvilasboas_esteticista</a></div></div>
+      </div>
+      <a class="btn btn-ouro" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+    </div>
+    <div class="mapa rv" style="--d:.1s"><iframe loading="lazy" title="Mapa da clínica" src="https://maps.google.com/maps?q=-22.8070669,-47.2639568&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <b>Luciana Vilas Boas Estética Avançada</b> · Sumaré/SP<br>
+  Prévia de site desenvolvida pela Atlas Digital
+</footer>
+
+<a class="flutuante" href="https://wa.me/5519992509325?text=Ol%C3%A1%2C%20Luciana!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3"/></symbol>
+</svg>
+
+<script>
+  document.querySelectorAll('.aba').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.aba').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', x === b); });
+    document.querySelectorAll('.lista').forEach(l => l.classList.toggle('on', l.id === b.dataset.lista));
+  }));
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('vis'));
+</script>
+</body>
+</html>

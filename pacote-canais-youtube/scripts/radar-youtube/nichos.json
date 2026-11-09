@@ -1,0 +1,85 @@
+{
+  "regiao": "US",
+  "idioma": "en",
+  "periodo": "mes",
+  "filtros": {
+    "min_views": 500000,
+    "max_inscritos": 300000,
+    "canal_novo_dias": 365,
+    "min_views_por_inscrito": 5,
+    "so_titulos_latinos": true,
+    "max_videos_canal": 3000,
+    "excluir_palavras": [
+      "full movie",
+      "drama",
+      "#romance",
+      "commercial",
+      "heiress",
+      "stepsister",
+      "fiancé",
+      "manifestation",
+      "visualization",
+      "minecraft",
+      "fanpage"
+    ]
+  },
+  "nichos": {
+    "finanças e dinheiro": [
+      "why everything got so expensive",
+      "hidden cost",
+      "who owns",
+      "the real reason prices",
+      "debt crisis",
+      "money explained",
+      "how banks make money"
+    ],
+    "riqueza e bilionários": [
+      "billionaire",
+      "old money",
+      "richest family",
+      "most expensive",
+      "luxury"
+    ],
+    "golpes e fraudes": [
+      "scam",
+      "fraud documentary",
+      "ponzi scheme",
+      "collapse explained"
+    ],
+    "negócios e marcas": [
+      "rise and fall",
+      "what happened to",
+      "company documentary",
+      "brand history"
+    ],
+    "POV e hipotético": [
+      "POV: you",
+      "pov you wake up",
+      "what if",
+      "pov you're a"
+    ],
+    "história": [
+      "history documentary",
+      "dark history",
+      "untold story",
+      "ancient",
+      "medieval life"
+    ],
+    "curiosidades e ciência": [
+      "explained",
+      "how it's made",
+      "inside the factory",
+      "your brain can't comprehend"
+    ],
+    "crime e mistério": [
+      "true crime",
+      "mystery solved",
+      "caught on camera"
+    ],
+    "sobrevivência e aventura": [
+      "survival story",
+      "days in the most dangerous",
+      "abandoned"
+    ]
+  }
+}

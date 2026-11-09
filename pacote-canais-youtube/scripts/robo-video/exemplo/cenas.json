@@ -1,0 +1,49 @@
+{
+  "titulo": "Teste: o carro que ninguém queria",
+  "estilo": "dossie",
+  "fontes_midia": [
+    "wikimedia",
+    "pexels"
+  ],
+  "voz": {
+    "mac": "Luciana",
+    "openai": "onyx",
+    "elevenlabs": "QAmlwgbPtjxpk7u98Qs9"
+  },
+  "cenas": [
+    {
+      "texto": "Ele foi criado para ser o carro do povo. Mas, no começo, quase ninguém acreditava nele.",
+      "busca": "Volkswagen Beetle 1950s",
+      "destaque": "O carro do povo",
+      "escolha": 4
+    },
+    {
+      "texto": "Depois da guerra, a fábrica estava em ruínas, e os ingleses tiveram a chance de levar o projeto para casa.",
+      "busca": "Wolfsburg Volkswagen factory 1945",
+      "destaque": "Fábrica em ruínas",
+      "escolha": 1
+    },
+    {
+      "texto": "Eles recusaram. Disseram que aquele carro feio e barulhento não tinha futuro.",
+      "busca": "Volkswagen Beetle rear engine",
+      "destaque": "Recusado",
+      "escolha": 2
+    },
+    {
+      "texto": "Foi um dos erros mais caros da história da indústria automotiva.",
+      "destaque": "Um erro histórico"
+    },
+    {
+      "texto": "O pequeno besouro atravessou oceanos, ganhou as estradas do mundo inteiro e chegou ao Brasil com outro nome.",
+      "busca": "Fusca Brasil",
+      "destaque": "Fusca",
+      "escolha": 8
+    },
+    {
+      "texto": "O carro que ninguém queria virou o carro que todo mundo teve. Ou conhece alguém que teve.",
+      "busca": "Volkswagen Beetle classic car meeting",
+      "destaque": null,
+      "escolha": 4
+    }
+  ]
+}

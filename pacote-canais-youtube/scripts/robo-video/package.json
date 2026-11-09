@@ -1,0 +1,25 @@
+{
+  "name": "robo-video",
+  "private": true,
+  "type": "module",
+  "description": "Robô de vídeo longo: roteiro em cenas → narração → mídia → edição → MP4 + SRT",
+  "scripts": {
+    "estudio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.2.0",
+    "@remotion/bundler": "4.0.533",
+    "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
+    "@remotion/media": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "@remotion/three": "4.0.533",
+    "d3-geo": "3.1.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.533",
+    "three": "0.178.0",
+    "topojson-client": "3.1.0",
+    "us-atlas": "3.0.1"
+  }
+}
